@@ -43,6 +43,10 @@ class ChatRequest(BaseModel):
     asker_biome: str = "Không rõ"
     asker_item_in_hand: str = "Tay không"
     asker_status: str = "Bình thường"
+    asker_kda: str = "Không rõ"
+    asker_playtime: str = "Không rõ"
+    asker_ip: str = "Không rõ"
+    asker_points: str = "Không rõ"
 
 class ClearMemoryRequest(BaseModel):
     player: str
@@ -122,7 +126,8 @@ async def chat_with_may(request: ChatRequest):
         - Máu: {request.asker_health} | Thức ăn: {request.asker_food} | Ping: {request.asker_ping}
         - Cầm trên tay: {request.asker_item_in_hand} | Tình trạng: {request.asker_status}
         - Tọa độ: {request.asker_location} | Biome: {request.asker_biome}
-        - Tiền: {request.asker_money}
+        - Tiền: {request.asker_money} | Point: {request.asker_points}
+        - KDA (Giết/Chết): {request.asker_kda} | Đã chơi: {request.asker_playtime} | IP: {request.asker_ip}
 
         [CÂU HỎI CỦA {request.player}]: {request.message}
         """
