@@ -144,7 +144,7 @@ async def chat_with_may(request: ChatRequest):
         chat_completion = client.chat.completions.create(
             messages=api_messages,
             model="llama-3.1-8b-instant",
-            temperature=0.2,  # Giảm xuống để AI bớt sáng tạo, bớt bịa đặt
+            temperature=0.1,  # Giảm xuống để AI bớt sáng tạo, bớt bịa đặt
             max_tokens=80      # Ép ngắn để trả lời nhanh hơn
         )
 
