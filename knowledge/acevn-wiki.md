@@ -2,6 +2,7 @@
 
 ## 1. THÔNG TIN CHUNG & LỊCH SỬ (RẤT QUAN TRỌNG)
 - Tên máy chủ: ACEVN (ACEVN SMP).
+- ip địa chỉ công khai là play.acevn.io.vn hoặc acevn.io.vn
 - Thể loại: Sinh tồn (Survival Multiplayer) kết hợp cày cuốc RPG.
 - Phiên bản hỗ trợ: Từ 1.21 đến 1.26.1 (Core chính là 1.21.11).
 - Người sáng lập (Admin): Alien - Một Admin vô cùng thanh lịch, tâm huyết và thân thiện.
@@ -42,11 +43,38 @@
 - Tranh Đoạt Đế Vương: Gõ `/king` để xem hệ thống Tranh Đoạt Ngai Vàng.
 - Truy Nã (Bounty): Ra Spawn gặp NPC "Phong Thần Bản" để bỏ tiền thuê sát thủ hoặc đặt lệnh truy nã kẻ thù.
 
-## 7. CỘNG ĐỒNG & THỊ TRẤN (TOWNY)
-- ACEVN dùng Towny đã Việt Hóa 100%. Gõ `/t help` để xem toàn bộ lệnh.
-- Lập làng: `/t new <tên>` (Cần có tiền).
-- Mời bạn: `/t invite <tên>`.
-- Mở rộng đất: `/t claim`.
+## 7. CẨM NANG TOWNY (THỊ TRẤN) TỪ A-Z CHO NGƯỜI MỚI
+Towny là hệ thống tạo lập thị trấn, giúp bạn bảo vệ tài sản, xây dựng đế chế cùng bạn bè và không sợ bị phá nhà hay trộm đồ. Lệnh Towny đã được Việt Hóa 100%, có thể gõ `/t help` để tự xem. Dưới đây là các bước từ lúc nghèo rớt mồng tơi đến khi làm Thị trưởng (Mayor).
+
+### Phần 1: Khởi nghiệp & Ngân hàng Town (SỐNG CÒN)
+Để lập một thị trấn, bạn cần phải có tiền cá nhân (gõ `/bal` để kiểm tra).
+* **`/t new <tên_thị_trấn>`**: Lập thị trấn ngay tại Chunk (16x16 block) bạn đang đứng. Chỗ này sẽ tự động trở thành "Quê nhà" (HomeBlock) của thị trấn.
+* **`/t deposit <số_tiền>`**: Nạp tiền túi vào Ngân hàng của thị trấn. **CỰC KỲ QUAN TRỌNG:** Mỗi ngày hệ thống sẽ tự động thu một khoản "Thuế duy trì" (Upkeep) từ Ngân hàng Town. Nếu ngân hàng cạn sạch tiền, thị trấn của bạn sẽ bị đánh sập (Ruin) và mất trắng đất đai! Hãy luôn nạp dư tiền vào đây.
+* **`/t withdraw <số_tiền>`**: Rút tiền từ Ngân hàng thị trấn ra túi riêng (Chỉ Thị trưởng mới rút được).
+
+### Phần 2: Mở rộng bờ cõi & Tiền Đồn (Outpost)
+Thị trấn càng đông dân, bạn càng được phép mua nhiều đất.
+* **`/t claim`**: Mua thêm 1 mảnh đất (16x16) ngay chỗ bạn đang đứng. **Điều kiện:** Mảnh đất này BẮT BUỘC phải dính liền với vùng đất cũ của thị trấn.
+* **`/t claim outpost`**: Mua Tiền Đồn. Dùng khi bạn muốn chiếm một vùng đất cực đẹp ở tít mù khơi nhưng không hề dính dáng đến đất gốc của Town. Lưu ý: Tiền đồn đắt hơn đất bình thường rất nhiều!
+* **`/t unclaim`**: Bỏ mảnh đất đang đứng (bán lại cho nhà nước).
+* **`/t outpost <số_thứ_tự>`**: Dịch chuyển nhanh đến Tiền Đồn của mình.
+
+### Phần 3: Tuyển dân & Quản lý nhân sự
+Một mình thì làm không xuể, bạn cần mời bạn bè vào Town để tăng giới hạn đất được mua và cùng nhau xây dựng.
+* **`/t invite <tên_người_chơi>`**: Mời ai đó vào thị trấn.
+* **`/t kick <tên_người_chơi>`**: Đuổi một thành viên khỏi thị trấn.
+* **`/t rank add <tên_người_chơi> assistant`**: Phong tước "Phó Thị Trưởng" cho người bạn tin tưởng. Họ sẽ có quyền mời người, mua đất, nạp tiền giúp bạn. (Nếu muốn giáng chức thì thay chữ `add` bằng `remove`).
+
+### Phần 4: An ninh & Thuế má
+Bảo vệ dân làng và thu tiền từ họ để duy trì thị trấn.
+* **`/t toggle pvp`**: Bật/Tắt chế độ đánh nhau trong thị trấn.
+* **`/t toggle mobs`**: Bật/Tắt quái vật sinh ra trong thị trấn (Tắt đi cho an toàn cày cuốc).
+* **`/t set taxes <số_tiền>`**: Cài đặt mức thuế thu hàng ngày của mỗi người dân. Tiền này sẽ tự động chảy từ túi người chơi vào Ngân hàng Town để trả phí duy trì. Đừng set cao quá dân bỏ đi hết!
+
+### Phần 5: Lệnh dành cho Dân Đen (Resident)
+* **`/t spawn`**: Dịch chuyển về trung tâm thị trấn của mình ngay lập tức.
+* **`/res deposit <số_tiền>`**: Tự nguyện quyên góp tiền vào quỹ Town để giúp Thị trưởng.
+* **`/t leave`**: Rời khỏi thị trấn hiện tại.
 
 ## 8. QUY TẮC & HỖ TRỢ
 - Luật thép: Tuyệt đối cấm Hack/Cheat/Lừa đảo. Vi phạm là ban vĩnh viễn không khoan nhượng. Không chửi bới, toxic.
