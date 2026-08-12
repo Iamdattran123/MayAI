@@ -53,6 +53,7 @@ class ClearMemoryRequest(BaseModel):
 # ==========================================
 
 # CỔNG 1: BÁO THỨC CHỐNG NGỦ ĐÔNG (Dành cho UptimeRobot)
+@app.head("/api/ping")
 @app.get("/api/ping")
 async def keep_awake():
     return {"status": "Mây vẫn đang mở mắt nha Sếp!"}
