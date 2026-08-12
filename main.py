@@ -145,7 +145,7 @@ async def chat_with_may(request: ChatRequest):
             messages=api_messages,
             model="llama-3.1-8b-instant",
             temperature=0.1,  # Giảm xuống để AI bớt sáng tạo, bớt bịa đặt
-            max_tokens=80      # Ép ngắn để trả lời nhanh hơn
+            max_tokens=200      # Ép ngắn để trả lời nhanh hơn
         )
 
         reply = chat_completion.choices[0].message.content.replace('\n', ' ').strip()
